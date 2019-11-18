@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/roboSearchApp/static/css/main.9d4c2488.chunk.css",
-    "main.js": "/roboSearchApp/static/js/main.28719216.chunk.js",
-    "main.js.map": "/roboSearchApp/static/js/main.28719216.chunk.js.map",
+    "main.js": "/roboSearchApp/static/js/main.cc794a34.chunk.js",
+    "main.js.map": "/roboSearchApp/static/js/main.cc794a34.chunk.js.map",
     "runtime-main.js": "/roboSearchApp/static/js/runtime-main.7ef7b2a9.js",
     "runtime-main.js.map": "/roboSearchApp/static/js/runtime-main.7ef7b2a9.js.map",
     "static/css/2.eb45ad44.chunk.css": "/roboSearchApp/static/css/2.eb45ad44.chunk.css",
-    "static/js/2.013959d9.chunk.js": "/roboSearchApp/static/js/2.013959d9.chunk.js",
-    "static/js/2.013959d9.chunk.js.map": "/roboSearchApp/static/js/2.013959d9.chunk.js.map",
+    "static/js/2.caf6e986.chunk.js": "/roboSearchApp/static/js/2.caf6e986.chunk.js",
+    "static/js/2.caf6e986.chunk.js.map": "/roboSearchApp/static/js/2.caf6e986.chunk.js.map",
     "index.html": "/roboSearchApp/index.html",
-    "precache-manifest.384fb2e9bad0409699206ee9b92b09d3.js": "/roboSearchApp/precache-manifest.384fb2e9bad0409699206ee9b92b09d3.js",
+    "precache-manifest.61f8e388eeb537d9033c35f93c4cbcb0.js": "/roboSearchApp/precache-manifest.61f8e388eeb537d9033c35f93c4cbcb0.js",
     "service-worker.js": "/roboSearchApp/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/roboSearchApp/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.9d4c2488.chunk.css.map": "/roboSearchApp/static/css/main.9d4c2488.chunk.css.map",
@@ -18,8 +18,8 @@
   "entrypoints": [
     "static/js/runtime-main.7ef7b2a9.js",
     "static/css/2.eb45ad44.chunk.css",
-    "static/js/2.013959d9.chunk.js",
+    "static/js/2.caf6e986.chunk.js",
     "static/css/main.9d4c2488.chunk.css",
-    "static/js/main.28719216.chunk.js"
+    "static/js/main.cc794a34.chunk.js"
   ]
 }
