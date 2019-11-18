@@ -1,30 +1,26 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import './App.css';
+import { setSearchField, fetchUsers } from '../actions';
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      robots: [],
-      searchfield: ''
-    }
-  }
+  // constructor() {
+  //   super()
+  // }
 
   componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response=> response.json())
-      .then(users => {this.setState({ robots: users})});
+    this.props.onFetchUser()
   }
 
   onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value })
+    this.props.onSearchChange(event.target.value)
   }
 
   render() {
-    const { robots, searchfield } = this.state;
+    const { searchfield, robots } = this.props;
     const filteredRobots = robots.filter(robot =>{
       return robot.name.toLowerCase().includes(searchfield.toLowerCase());
     })
@@ -42,4 +38,20 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    searchfield: state.searchRobots.searchField,
+    robots : state.requestUsers.robots,
+    isPending : state.requestUsers.isPending,
+    error : state.requestUsers.error,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onSearchChange : (text) => dispatch(setSearchField(text)),
+    onFetchUser : () => fetchUsers(dispatch),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
